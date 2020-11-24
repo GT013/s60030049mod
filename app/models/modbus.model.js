@@ -4,7 +4,11 @@ var Schema=mongoose.Schema;
 var modbusSchema=new Schema({
     temperature: Number,
     humidity: Number,
-    datetime: String
+    year: Number,
+    month: Number,
+    day: Number,
+    hour: Number,
+    minute: Number
 });
 
 mongoose.model('modbus',modbusSchema);
